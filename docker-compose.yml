@@ -5,6 +5,8 @@ services:
     build:
       dockerfile: Dockerfile
       context: .
-      target: prod
+      target: dev
     volumes:
       - ".:/app"
+    command:
+      - air
